@@ -13,7 +13,7 @@ import Footer from './Footer.jsx';
 
 createRoot(document.getElementById('root')).render(
 
-  <BrowserRouter>
+  <BrowserRouter basename="/React-app">
   <Nav/>
   <Routes>
     <Route path="/" element={<App />} />
