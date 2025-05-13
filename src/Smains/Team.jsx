@@ -14,7 +14,7 @@ export default function Team() {
       <div className="tree-container">
         <div className="tree-level">
           <div className="tree-card">
-            <img src="/public/Members/younes.png" alt="Younes TAOUMI" />
+            <img src="../../public/Members/younes.png" alt="Younes TAOUMI" />
             <h4>Younes TAOUMI</h4>
             <p>Team Leader</p>
           </div>
