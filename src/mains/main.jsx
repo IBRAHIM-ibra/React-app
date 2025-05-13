@@ -12,8 +12,8 @@ import Footer from './Footer.jsx';
 
 
 createRoot(document.getElementById('root')).render(
-  <HashRouter>
-  {/* <BrowserRouter basename="/React-app"> */}
+  
+  <BrowserRouter basename="/React-app">
   <Nav/>
   <Routes>
     <Route path="/" element={<App />} />
@@ -24,9 +24,7 @@ createRoot(document.getElementById('root')).render(
     <Route path="/Join" element={<Join />} />
   </Routes>
   <Footer/>
-{/* </BrowserRouter> */}
-
-  </HashRouter>
+</BrowserRouter>
 );
 
 
