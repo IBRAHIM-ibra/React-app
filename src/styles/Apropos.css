@@ -1,0 +1,84 @@
+:root {
+  --secondary-color: #F5F5F5;
+  --primary-color: #1E1E1E;
+  --yellow: #FEC223;
+}
+
+.fuzzy-overlay-container {
+  position: relative;
+  overflow: hidden;
+
+}
+
+.fuzzy-overlay {
+  position: absolute;
+  inset: -100%;
+  pointer-events: none;
+  opacity: 15%;
+  background-image: url("/noiseImage2.jpg");
+  animation: fuzzy-animation 0.2s linear infinite alternate;
+}
+
+@keyframes fuzzy-animation {
+  0% {
+    transform: translateX(-10%) translateY(-10%);
+  }
+  100% {
+    transform: translateX(10%) translateY(10%);
+  }
+}
+
+.Apropos-Hero-content {
+  display: grid;
+  place-content: center;
+  height: 90vh;
+  padding: 2rem;
+  background-color: var(--secondary-color);
+  text-align: center;
+}
+
+.Apropos-main-title {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.Apropos-sub-title {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.Apropos-button-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.Apropos-pricing-button {
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 6px;
+  background-color: var(--yellow);
+  color: var(--primary-color);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.Apropos-pricing-button:hover {
+  background-color: #e5ae1c;
+  transform: scale(1.03);
+}
+
+
+
+
+
+
+
+
+

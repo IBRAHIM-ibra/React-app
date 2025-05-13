@@ -1,0 +1,181 @@
+:root {
+    --secondary-color : #F5F5F5;
+    --primary-color : #1E1E1E;
+    --yellow : #FEC223;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6vw;
+    width: 100%;
+    font-family: 'Libre Baskerville' serif sans-serif;
+    color: #F5F5F5;
+    font-size: 1vw;
+   z-index: 1000;
+
+}
+ 
+ nav ul {
+    display: flex;
+    list-style-type: none;
+    margin-left: 20vw;
+    animation: LinksMoving 1s ease-out ;
+
+}
+
+li {
+    padding-right: 4vw;
+}
+a {
+    text-decoration: none;
+    color: #FEC223;
+}
+ul li {
+    transition: transform 0.3s ease;
+    
+}
+
+ul li:hover {
+    transform: scale(1.1);
+}
+
+
+nav .logo{
+    width: 10vw;
+    animation: LogoMoving 1s ease;
+}
+
+
+
+@keyframes LinksMoving {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+nav .active {
+    padding: 1vw 1.3vw;
+    border-radius: 1vw;
+    color: var(--primary-color);
+    font-weight: bold;
+    background-color: var(--yellow);
+    transition: background-color 0.6s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 0 transparent;
+    animation: JoinMoving 1s ease ;
+    position: relative;
+    right: -2vw;
+
+
+    
+}
+
+nav .active:hover {
+    background-color: transparent;
+    transform: scale(1.1);
+    color: var(--yellow);
+    box-shadow: 0 0 2vw var(--yellow);
+}
+
+
+@keyframes JoinMoving {
+    0% {
+        transform: translateY(-90px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes LogoMoving {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+
+    }
+}
+
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width : 768px) {
+    nav {
+        height: 12vw;
+    }
+    nav .logo {
+        width: 23vw;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: var(--primary-color);
+        position: absolute;
+        top: 10vw;
+        right: 0px;
+        padding: 10px;
+        border-radius: 2px;
+        
+  
+        
+        
+    }
+    .nav-links.open {
+        display: flex;
+        height: 100%;
+        z-index: 1000;
+        
+       
+    }
+
+    ul li {
+        padding-top: 30px;
+        padding-left: 10px;
+        font-size: 9px;
+    }
+   
+    .menu-icon {
+        display: block;
+    }
+    .menu-icon img {
+        width: 7vw;
+        z-index: 1000;
+    }
+
+
+    
+}
+
+
+
+
+
+
+
+

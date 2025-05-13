@@ -1,0 +1,88 @@
+:root {
+    --secondary-color: #F5F5F5;
+    --primary-color: #1E1E1E;
+    --yellow: #FEC223;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--secondary-color);
+  }
+  
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 1rem;
+    min-height: 100vh;
+  }
+  
+  .contact-form {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    animation: slideIn 1s ease;
+  }
+  .contact-information2 {
+     text-align: center;
+  }
+  .contact-Logo2 {
+    width: 150px;
+  }
+  
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .contact-form h2 {
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+    text-align: left;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+
+  .form-group input:focus,textarea:focus {
+    border-color: var(--focus-color);
+    box-shadow: 0 0 0 1px rgba(30, 30, 30, 0.1);
+    outline: none;
+  }
+  
+  .contact-container button {
+    display: block;
+    margin: auto;
+    padding: 0.75rem 2rem;
+    background: var(--yellow);
+    color: var(--primary-color);
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .contact-container button:hover {
+    transform: scale(1.05);
+    background: #e0aa1f;
+  }
+    

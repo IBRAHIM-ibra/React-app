@@ -1,0 +1,47 @@
+.home-description {
+    background: white;
+    padding: 2.5rem;
+    margin: 5rem auto;
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  .desc-title {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  
+  .desc-text {
+    font-size: 1.125rem;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .highlight {
+    color: var(--yellow);
+    font-weight: bold;
+  }
+  
+  .desc-quote {
+    margin-top: 1.5rem;
+    font-style: italic;
+    color: #666;
+  }
+  
+  .desc-button {
+    margin-top: 2rem;
+    background-color: var(--yellow);
+    color: var(--primary-color);
+    padding: 0.6rem 1.5rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .desc-button:hover {
+    background-color: #e6b01c;
+  }
+  

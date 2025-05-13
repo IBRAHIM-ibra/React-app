@@ -1,0 +1,40 @@
+:root {
+    --secondary-color: #F5F5F5;
+    --primary-color: #1E1E1E;
+    --yellow: #FEC223;
+  }
+
+
+.stats-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 2rem;
+    padding: 3rem 2rem;
+    background: var(--secondary-color);
+  }
+  
+  .stat-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  }
+
+  .stat-card:hover {
+    box-shadow: 0 12px 25px rgba(254, 194, 35, 0.3);
+  }
+
+  
+  .stat-value {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+  
+  .stat-label {
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+    color: #666;
+  }
+  

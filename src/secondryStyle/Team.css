@@ -1,0 +1,65 @@
+.tree {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .tree-title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #333;
+  }
+  
+  .tree-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: center;
+  }
+  
+  .tree-level {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .tree-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    width: 200px;
+    cursor: grab;
+  }
+  
+
+  
+  .tree-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .tree-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 3px solid #eee;
+  }
+  
+  .tree-card h4 {
+    font-size: 1.2rem;
+    color: #222;
+    margin-bottom: 0.25rem;
+  }
+  
+  .tree-card p {
+    color: #777;
+    font-size: 0.95rem;
+  }
+  
+  
