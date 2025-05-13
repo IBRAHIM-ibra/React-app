@@ -6,7 +6,7 @@ const evenements = [
     date: "2024-2025",
     description:
       "La journée de lancement et d'intégration a permis de présenter le club Enactus FSBM tout en facilitant l'intégration des nouveaux membres...",
-    image: "/src/images/ClubImages/image0.png",
+    image: "../images/ClubImages/image0.png",
   },
   {
     id: 2,
