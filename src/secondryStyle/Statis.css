@@ -27,14 +27,14 @@
 
   
   .stat-value {
-    font-size: 1rem;
+    font-size: 1.8rem;
     font-weight: bold;
     color: var(--primary-color);
   }
   
   .stat-label {
     margin-top: 0.5rem;
-    font-size: 0.70rem;
+    font-size: 0.95rem;
     color: #666;
   }
   
