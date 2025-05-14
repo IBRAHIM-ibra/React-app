@@ -36,12 +36,12 @@ const ExampleContent = () => {
         Nous sommes un club dynamique dédié à l'impact social, à l'innovation et à l'engagement des étudiants. Rejoignez-nous pour construire un avenir meilleur ensemble.
       </p>
       <div className="Apropos-button-container">
-        <Link to="/events">
+        <Link to="/Events">
           <button className="Apropos-pricing-button">Voir nos événements</button>
         </Link>
-        <Link to="/projects">
+        <Link to="/Projetcs">
          <button className="Apropos-pricing-button">Découvrir nos projets</button>
-</Link>
+        </Link>
 
       </div>
     </div>
